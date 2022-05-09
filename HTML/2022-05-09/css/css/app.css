@@ -1,0 +1,19 @@
+body {
+	font-family: 'Lobster', cursive;
+}
+
+.container {
+	background: red; 
+	border: 3px dashed black;
+	overflow: auto;
+}
+
+#box-model {
+	display: inline-block;
+	background: purple;
+	margin: 15px;
+	padding: 25px;
+	border: 15px dashed green;
+	width: 300px;
+	height: 300px;
+}
