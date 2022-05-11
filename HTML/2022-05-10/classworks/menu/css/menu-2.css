@@ -1,0 +1,22 @@
+#menu ul {
+	list-style-type: none;
+	width: 200px;
+}
+
+#menu li {
+	margin-bottom: 5px;
+}
+
+#menu a:link,
+#menu a:visited {
+	display: block;
+	text-decoration: none;
+	color: blue;
+	border: 1px solid blue;
+	padding: 0px 5px;
+	line-height: 30px;
+}
+
+#menu a:hover {
+	font-weight: bold;
+}

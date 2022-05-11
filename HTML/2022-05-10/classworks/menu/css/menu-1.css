@@ -1,0 +1,10 @@
+#menu a:link,
+#menu a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+	color: red;
+}
