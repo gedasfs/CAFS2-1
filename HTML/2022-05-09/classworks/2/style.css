@@ -7,8 +7,7 @@
 .container > div:nth-child(1) {
 	background-color: red;
 
-	/*width: 266px;*/
-	width: 286px;
+	width: 232px;
 
 	padding: 30px;
 	border: 4px solid;
@@ -18,7 +17,7 @@
 .container > div:nth-child(2) {
 	background-color: green;
 	
-	width: 246px;
+	width: 192px;
 
 	padding: 50px;
 	border: 4px solid;
