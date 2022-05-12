@@ -1,0 +1,80 @@
+section {
+	margin-bottom: 10px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+section > div {
+	margin: 0 5px 3px;
+	padding: 5px;
+}
+
+.mobile-hidden {
+	display: none;
+}
+
+section.one > div {
+	background-color: orange;
+
+	/*height: 30px;*/
+	height: 5vh;
+}
+
+section.two > div {
+	background-color: olivedrab;
+
+	/*height: 50px;*/
+	height: 10vh;
+}
+
+section.three > div {
+	background-color: blue;
+
+	/*height: 100px;*/
+	height: 20vh;
+}
+
+section.four > div {
+	background-color: #ccc;
+
+	/*height: 30px;*/
+	height: 3vh;
+}
+
+@media only screen and (min-width: 768px) {
+	.mobile-hidden {
+		display: block;
+	}
+
+	section.four {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	section.four > div {
+		flex-basis: 47%;
+		flex-grow:  1;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+	section.one {
+		flex-direction: row;
+	}
+
+	section.one > div {
+		flex-grow: 1;
+	}
+
+	section.three {
+		flex-direction: row;
+	}
+
+	section.three > div,
+	section.four > div {
+		flex-basis: 20%;
+		flex-grow: 1;
+	}
+}
