@@ -1,0 +1,50 @@
+/* Mobile version  */
+body {
+	background-color: red;
+}
+
+/* Tablet version  */
+@media only screen and (max-width: 700px) {
+	body {
+		background-color: yellow;
+	}
+}
+
+div {
+	display: none;
+}
+
+/* Ypač maži įrenginiai (telefonai, 600 pikselių ir žemesni) */
+@media only screen and (max-width: 600px) {
+	div:nth-child(1) {
+		display: block;
+	}
+}
+
+/* Maži įrenginiai (planšetiniai kompiuteriai ir dideli telefonai, 600 pikselių ir daugiau) */
+@media only screen and (min-width: 600px) {
+	div:nth-child(2) {
+		display: block;
+	}
+}
+
+/* Vidutiniai įrenginiai (kraštovaizdžio planšetiniai kompiuteriai, 768 pikselių ir didesni) */
+@media only screen and (min-width: 768px) {
+	div:nth-child(3) {
+		display: block;
+	}
+}
+
+/* Dideli įrenginiai (nešiojamieji kompiuteriai / staliniai kompiuteriai, 992 tapikseliųškų ir didesni) */
+@media only screen and (min-width: 992px) {
+	div:nth-child(4) {
+		display: block;
+	}
+}
+
+/* Ypač dideli įrenginiai (dideli nešiojamieji kompiuteriai ir staliniai kompiuteriai, 1 200 pikselių ir didesni) */
+@media only screen and (min-width: 1280px) {
+	div:nth-child(5) {
+		display: block;
+	}
+}
