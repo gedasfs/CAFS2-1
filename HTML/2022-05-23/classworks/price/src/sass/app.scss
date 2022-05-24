@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+$primary: #303ca5;
+
+@import '~bootstrap/scss/bootstrap';
+
+// https://getbootstrap.com/docs/5.2/layout/breakpoints/#media-queries
+@include media-breakpoint-only(xs) {
+    button {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Nunito Sans';
+    color: #080f1a;
+}
+
+.text-muted {
+    color: #73829e !important;
+}
+
+.price {
+    font-weight: 700;
+    background-color: #f4f6fc;
+
+    .price-number {
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .price-signs {
+        text-align: left;
+
+        > div:first-child {
+            margin-top: 8px;
+            margin-bottom: -8px;
+        }
+    }
+}
+
+.list {
+    li > span,
+    li > small {
+        border-bottom: 1px dotted red;
+    }
+}
