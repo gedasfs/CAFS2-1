@@ -34,6 +34,7 @@ console.log(Math.ceil(Math.PI));
 console.log(Math.floor(Math.PI));
 console.log(Math.round(Math.PI));
 console.log(Math.trunc(Math.PI));
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 console.log(Math.PI.toFixed(3), +Math.PI.toFixed(3));
 
 console.log(Math.random());
