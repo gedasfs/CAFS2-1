@@ -1,0 +1,30 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td.actions > button {
+  margin-right: 5px;
+}
+
+#hi {
+  color: red;
+  background-color: yellow;
+  padding: 15px;
+}
+
+#companies {
+  margin-bottom: 10px;
+}
+

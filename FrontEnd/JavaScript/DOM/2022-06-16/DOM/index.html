@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Companies</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<table id="companies">
+		<thead>
+			<tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<fieldset id="company-create-container">
+		<legend>Add Company:</legend>
+		<label for="company">Company:</label>
+		<input type="text" id="company" name="company" value="Company"><br><br>
+		<label for="contact">Contact:</label>
+		<input type="text" id="contact" name="contact" value="Contact"><br><br>
+		<label for="country">Country:</label>
+		<input type="text" id="country" name="country" value="Country"><br><br>
+		<button id="company-create">Create</button>
+	</fieldset>
+	<script src="js/app.js"></script>
+</body>
+</html>
