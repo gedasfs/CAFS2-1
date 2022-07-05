@@ -4,6 +4,10 @@ class Shop {
 	}
 
 	add(product) {
+		if (product instanceof Product == false) {
+			throw new Error('This is not a product');
+		}
+
 		this.products.push(product);
 	}
 	
@@ -26,9 +30,11 @@ class Shop {
 			throw new Error('Order type not recognized');
 		}
 
+		const orderTypeResult = orderType == Shop.ORDER_BY_PRICE_ASCENDING;
+
 		return this.products
-			.filter(p => orderType == Shop.ORDER_BY_PRICE_ASCENDING ? p.getPrice() >= price : p.getPrice() <= price)
-			.sort((f, s) => orderType == Shop.ORDER_BY_PRICE_ASCENDING ? f.getPrice() - s.getPrice() : s.getPrice() - f.getPrice());
+			.filter(p => orderTypeResult ? p.getPrice() >= price : p.getPrice() <= price)
+			.sort((f, s) => orderTypeResult ? f.getPrice() - s.getPrice() : s.getPrice() - f.getPrice());
 	}
 
 	// 3.2. Kategoriją (turi būti sukuriama funkcija, kuri leis vartotjui kaip argumentą nurodyti vieną iš kategorijų ir jam atvaizduos tas prekes, kurios turi tą kategoriją);
