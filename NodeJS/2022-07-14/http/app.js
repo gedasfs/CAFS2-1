@@ -5,8 +5,8 @@ const http = require('http');
 
 http.createServer(async function(request, response) {
 	console.log(request.url);
-	
-	const content = fs.readFileSync('users.json');
+
+	const content = fs.readFileSync('simple.txt');
 
 	response.writeHead(200, {
 		'Content-Type': 'application/json'
