@@ -1,0 +1,15 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "prod": "node app.js"
+  },
+  "author": "hello@nonamez.name",
+  "license": "Beerware",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
