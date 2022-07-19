@@ -35,8 +35,6 @@ http.createServer(function(request, response) {
 	console.log(`Requested file path: ${filePath}`);
 
 	fs.lstat(filePath, function(err, stats) {
-		console.log(stats);
-		
 		if (err) {
 			console.log(err.message);
 
