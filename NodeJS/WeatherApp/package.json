@@ -1,0 +1,41 @@
+{
+  "name": "WeatherApp",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "server:prod": "NODE_ENV=production node ./bin/www",
+    "server:dev": "NODE_ENV=development npx nodemon ./bin/www",
+    "assets:dev": "npm run assets:development",
+    "assets:development": "mix",
+    "assets:watch": "mix watch",
+    "assets:prod": "npm run assets:production",
+    "assets:production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonamez/CAFS2.git"
+  },
+  "author": "hello@nonamez.name",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/nonamez/CAFS2/issues"
+  },
+  "homepage": "https://github.com/nonamez/CAFS2#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "lodash": "^4.0.8",
+    "morgan": "^1.10.0",
+    "request": "git+https://github.com/nonamez/request.git"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.6",
+    "nodemon": "^2.0.19",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0"
+  }
+}
