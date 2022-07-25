@@ -1,0 +1,17 @@
+{
+  "name": "express",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "dev": "DEBUG=express:* nodemon app.js",
+    "prod": "NODE_ENV=production node app.js"
+  },
+  "author": "hello@nonamez.name",
+  "license": "Beerware",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
