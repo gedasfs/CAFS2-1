@@ -1,10 +1,11 @@
 {
-  "name": "WeatherApp",
+  "name": "weather-app",
   "version": "0.0.1",
   "main": "app.js",
   "scripts": {
-    "server:prod": "NODE_ENV=production node ./bin/www",
-    "server:dev": "NODE_ENV=development npx nodemon ./bin/www",
+    "server:prod": "npx cross-env NODE_ENV=production node ./bin/www",
+    "server:dev": "npx cross-env NODE_ENV=development PORT=80 nodemon ./bin/www",
+    
     "assets:dev": "npm run assets:development",
     "assets:development": "mix",
     "assets:watch": "mix watch",
@@ -33,7 +34,6 @@
   },
   "devDependencies": {
     "laravel-mix": "^6.0.6",
-    "nodemon": "^2.0.19",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0"
