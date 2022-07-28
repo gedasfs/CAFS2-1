@@ -1,9 +1,18 @@
 version: "3.9"
 
 services:
-  codeacademy-php:
-    image: php:8.1.8-alpine3.15
+  nginx:
+    image: nginx:1.23.1
     working_dir: /var/www
     volumes:
       - ./src:/var/www
-    tty: true
+      - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8085:80
+
+  php:
+    image: php:8.1.1-fpm-alpine3.15
+    working_dir: /var/www
+    volumes:
+      - ./src:/var/www
+    # tty: true
