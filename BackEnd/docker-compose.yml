@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  codeacademy-php:
+    image: php:8.1.8-alpine3.15
+    working_dir: /var/www
+    volumes:
+      - ./src:/var/www
+    tty: true
