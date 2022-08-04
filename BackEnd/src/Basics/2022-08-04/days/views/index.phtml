@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<select name="lang">
+			<?php foreach ($availableLangs as $currentLang): ?>
+			<option value="<?php echo $currentLang;?>"<?php echo $lang == $currentLang ? ' selected' : '' ?>><?php echo $currentLang;?></option>
+			<?php endforeach;?>
+		</select>
+		<input type="text" name="day" value="<?php echo $_GET['day'] ?? '' ?>">
+		<button>Submit</button>
+	</form>
+
+	<h1>
+		<?php echo $weekDays[$lang][$day]; ?>
+	</h1>
+</body>
+</html>
