@@ -3,8 +3,6 @@
 define('UPLOAD_DIR', dirname(__FILE__) . '/uploads');
 define('ALLOWED_EXTENSIONS', ['png', 'jpg', 'jpeg']);
 
-// move_uploaded_file($_FILES['some-file-name']['tmp_name'], UPLOAD_DIR . '/' . $_FILES['some-file-name']['name']);
-
 // https://stackoverflow.com/questions/4356289/php-random-string-generator
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
