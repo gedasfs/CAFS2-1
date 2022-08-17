@@ -89,6 +89,6 @@ ajaxResponse([
 	'php' => sprintf('http://%s/?module=load&name=%s.%s&date=%s', env('APP_URL', 'localhost'), $name, $ext, str_replace('/', '-', $date)),
 
 	// https://en.wikipedia.org/wiki/Symbolic_link
-	// ln -s /var/www/CV/profiles /var/www/CV/profiles
+	// ln -s /var/www/CV/profiles /var/www/CV/public/profiles
 	'nginx' => sprintf('http://%s%s', env('APP_URL', 'localhost'), $path),
 ]);
