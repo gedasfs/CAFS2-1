@@ -31,6 +31,8 @@ try {
 
 	ob_end_flush();
 } catch (Exception $e) {
+	ob_end_clean();
+	
 	$code = $e->getCode();
 	$message = $e->getMessage();
 
