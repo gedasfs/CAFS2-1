@@ -32,7 +32,7 @@ try {
 	ob_end_flush();
 } catch (Exception $e) {
 	ob_end_clean();
-	
+
 	$code = $e->getCode();
 	$message = $e->getMessage();
 
@@ -40,13 +40,13 @@ try {
 
 	if ($code == 404) {
 		if ($isXMLHttpRequest) {
-			ajaxResponse($errors, FALSE, $e->getMessage(), 404);
+			ajaxResponse([], FALSE, $e->getMessage(), 404);
 		} else {
 			http_response_code(404);
 		}
 	} else {
 		if ($isXMLHttpRequest) {
-			ajaxResponse($errors, FALSE, $e->getMessage(), 500);
+			ajaxResponse(status: FALSE, message: $e->getMessage(), httpResponseCode: 500);
 		} else {
 			http_response_code(500);
 			echo "Error: {$e->getMessage()}";
