@@ -1,0 +1,71 @@
+ {
+    "users":
+    [
+        {
+            "username": "orangetiger142",
+            "password": "7cb9ea2d8d345c501b0e4b65185f889a",
+            "email": "arttu.koivisto@example.com",
+            "location":
+            {
+                "street":
+                {
+                    "number": 6557,
+                    "name": "Bulevardi"
+                },
+                "city": "Raseborg",
+                "state": "Satakunta",
+                "country": "Finland",
+                "postcode": 15172,
+                "coordinates":
+                {
+                    "latitude": "-5.5670",
+                    "longitude": "-133.5855"
+                }
+            }
+        },
+        {
+            "username": "blackkoala816",
+            "password": "06229920d5b6da4cd4242f1d422321b3",
+            "email": "jaxon.moore@example.com",
+            "location":
+            {
+                "street":
+                {
+                    "number": 2707,
+                    "name": "Opoho Road"
+                },
+                "city": "Auckland",
+                "state": "West Coast",
+                "country": "New Zealand",
+                "postcode": 52411,
+                "coordinates":
+                {
+                    "latitude": "66.5563",
+                    "longitude": "-132.0848"
+                }
+            }
+        },
+        {
+            "username": "sadbutterfly916",
+            "password": "3241cba96a7ffcba490706d08146ed56",
+            "email": "lars.acker@example.com",
+            "location":
+            {
+                "street":
+                {
+                    "number": 6014,
+                    "name": "Beethovenstraße"
+                },
+                "city": "Westerburg",
+                "state": "Hamburg",
+                "country": "Germany",
+                "postcode": 57140,
+                "coordinates":
+                {
+                    "latitude": "-42.3932",
+                    "longitude": "-116.6138"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Auth",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonamez/CAFS2.git"
+  },
+  "author": "hello@nonamez.name",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/nonamez/CAFS2/issues"
+  },
+  "homepage": "https://github.com/nonamez/CAFS2#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "lodash.debounce": "^4.0.8"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.6",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0"
+  }
+}

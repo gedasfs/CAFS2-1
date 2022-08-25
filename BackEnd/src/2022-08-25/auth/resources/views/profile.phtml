@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?php echo env('APP_NAME', 'App Name'); ?></title>
+</head>
+<body>
+	<pre>
+	<?php
+		if (isset($_SESSION['user'], $_SESSION['time'])) {
+			var_dump($_SESSION['user']);
+			var_dump($_SESSION['time']);
+		}
+	?>
+	</pre>
+	<form method="POST" action="?module=logout">
+		<button>logout</button>
+	</form>
+</body>
+</html>
