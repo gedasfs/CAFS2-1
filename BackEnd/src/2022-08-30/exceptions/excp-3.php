@@ -32,12 +32,12 @@ catch (RangeException $e) {
 	echo sprintf('RangeException: %s, code: %d', $e->getMessage(), $e->getCode());
 }
 
-// catch (RuntimeException $e) {
-// 	echo sprintf('RuntimeException: %s, code: %d', $e->getMessage(), $e->getCode());
-// } 
+catch (RuntimeException $e) {
+	echo sprintf('RuntimeException: %s, code: %d', $e->getMessage(), $e->getCode());
+} 
 
-// catch (Exception $e) {
-// 	echo sprintf('Exception: %s, code: %d', $e->getMessage(), $e->getCode());
-// }
+catch (Exception $e) {
+	echo sprintf('Exception: %s, code: %d', $e->getMessage(), $e->getCode());
+}
 
 echo 'hello world';
