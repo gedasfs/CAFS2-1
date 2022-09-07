@@ -64,6 +64,10 @@ class User
 
 	public function useConstants(): void
 	{
+		// var_dump(self::CONSTANT);
+		// var_dump(self::CONSTANT_ONE);
+		// var_dump(self::CONSTANT_ARR);
+
 		var_dump(User::CONSTANT);
 		var_dump(User::CONSTANT_ONE);
 		var_dump(User::CONSTANT_ARR);

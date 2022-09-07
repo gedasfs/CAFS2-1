@@ -17,10 +17,10 @@ var_dump(User::CONSTANT_ARR);
 echo "Hello World 1\n";
 echo "Hello World 2\n";
 
-unset($userAnonym);
+// unset($userAnonym);
 
 echo "Hello World 3\n";
 echo "Hello World 4\n";
 echo "Hello World 5\n";
-unset($user);
+// unset($user);
 echo "Hello World 6\n";
