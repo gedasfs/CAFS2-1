@@ -23,6 +23,8 @@ var_dump($student->getAge());
 $driver = new Driver('Tom', 30, 10, ['A', 'B']);
 
 var_dump($driver);
+
 var_dump($driver->getName());
 var_dump($driver->getAge());
+
 var_dump($driver->getSalary());
