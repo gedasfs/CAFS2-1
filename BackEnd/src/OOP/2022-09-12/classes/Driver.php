@@ -2,7 +2,6 @@
 
 class Driver extends Worker
 {
-	
 	function __construct(
 		string $name,
         int $age,
@@ -13,7 +12,6 @@ class Driver extends Worker
 	{
 		parent::__construct($name, $age, $experience * count($categories));
 	}
-
 
 	public function getExperience(): int
 	{

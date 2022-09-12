@@ -2,7 +2,6 @@
 
 class Student extends Person
 {
-	
 	function __construct(
 		string $name,
 		int $age,
