@@ -15,3 +15,5 @@ RUN apk add --update \
 	&& docker-php-ext-install gd
 
 COPY ./conf/* /usr/local/etc/php/conf.d
+
+COPY --from=composer:2.4.1 /usr/bin/composer /usr/bin/composer
