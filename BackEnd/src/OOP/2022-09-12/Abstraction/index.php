@@ -13,9 +13,9 @@ $boat  = new Boat(1000, 2, 'wind');
 
 // Vilnius - Kaunas 200km
 var_dump(
-	$plane->getDistancePrice(200),
-	$car->getDistancePrice(200),
-	$boat->getDistancePrice(200),
+	$plane->getDistancePrice(200) . ' => ' . $plane->getClassName(),
+	$car->getDistancePrice(200) . ' => ' . $car->getClassName(),
+	$boat->getDistancePrice(200) . ' => ' . $boat->getClassName(),
 );
 
 // new Vehicle;
