@@ -1,0 +1,9 @@
+{
+    "name": "codeacademy/classes-in-namespaces",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
