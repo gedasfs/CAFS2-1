@@ -1,0 +1,32 @@
+{
+    "name": "codeacademy/composer",
+    "type": "project",
+    "license": "Beerware",
+    
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+
+    "authors": [
+        {
+            "name": "Kiri",
+            "email": "hello@nonamez.name"
+        }
+    ],
+
+    "minimum-stability": "stable",
+
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "slim/slim": "^4.10"
+    },
+
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/nonamez/php-db"
+        }
+    ]
+}

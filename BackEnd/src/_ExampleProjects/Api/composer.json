@@ -1,0 +1,22 @@
+{
+    "name": "codeacademy/api",
+    "type": "project",
+    "license": "Berware",
+    "autoload": {
+        "psr-4": {
+            "Codeacademy\\Api\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kiril",
+            "email": "hello@nonamez.name"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "slim/slim": "^4.10",
+        "slim/psr7": "^1.5",
+        "middlewares/trailing-slash": "^2.0"
+    }
+}
