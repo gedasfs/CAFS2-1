@@ -1,22 +1,18 @@
 {
     "name": "codeacademy/api",
     "type": "project",
-    "license": "Berware",
     "autoload": {
         "psr-4": {
-            "Codeacademy\\Api\\": "src/"
-        }
+            "App\\": "src/"
+        },
+        "files": ["src/functions.php"]
     },
-    "authors": [
-        {
-            "name": "Kiril",
-            "email": "hello@nonamez.name"
-        }
-    ],
-    "minimum-stability": "stable",
     "require": {
-        "slim/slim": "^4.10",
+        "vlucas/phpdotenv": "^5.4",
+        "symfony/var-dumper": "^5.4",
+        "slim/slim": "^4.9",
         "slim/psr7": "^1.5",
-        "middlewares/trailing-slash": "^2.0"
+        "middlewares/trailing-slash": "^2.0",
+        "php-di/slim-bridge": "^3.2"
     }
 }

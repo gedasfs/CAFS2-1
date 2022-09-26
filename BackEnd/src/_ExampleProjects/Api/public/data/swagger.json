@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "This is a sample server tore server.",
-    "version": "1.0.3",
+    "version": "1.0.2",
     "title": "Store",
     "termsOfService": "http:/my-store.io/terms/",
     "contact": {
