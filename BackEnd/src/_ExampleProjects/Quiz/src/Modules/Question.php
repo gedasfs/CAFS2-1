@@ -44,7 +44,6 @@ class Question
 			$questionCount - 1 == $questionIndex &&
 			isset($_SESSION['state']) && $_SESSION['state'] == 'finish'
 		) {
-
 			if ($questionCount != count($answersFromSession)) {
 				throw new \RuntimeException('Sorry. Something went wrong. Try again.');
 			}
@@ -58,7 +57,7 @@ class Question
 			}
 
 			$result = [
-				'result' => "Congratulations! You just finished quiz. Answers: {$correctAnswerCount} / {$questionCount}"
+				'result' => sprintf('Congratulations! You just finished quiz. Answers: %d / %d', $correctAnswerCount, $questionCount)
 			];
 		} else {
 			$result = $questions[$questionIndex];
@@ -74,8 +73,6 @@ class Question
 		}
 
 		$result['state'] = $_SESSION['state'] ?? 'progress';
-
-		dd($result);
 
 		ajaxResponse($result);
 	}

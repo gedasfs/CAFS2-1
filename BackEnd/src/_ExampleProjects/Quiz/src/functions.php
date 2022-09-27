@@ -60,7 +60,8 @@ if (!function_exists('ajaxResponse')) {
 }
 
 if (!function_exists('generateRandomString')) {
-	function generateRandomString($length = 10) {
+	function generateRandomString(int $length = 10)
+	{
 	    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 	    $charactersLength = strlen($characters);
 	    $randomString = '';
@@ -76,6 +77,6 @@ if (!function_exists('view')) {
 	{
 		extract($params);
 		
-		require_once ROOT_PATH . "/views/{$name}.phtml";
+		require_once ROOT_PATH . sprintf('/views/%s.phtml', $name);
 	}
 }

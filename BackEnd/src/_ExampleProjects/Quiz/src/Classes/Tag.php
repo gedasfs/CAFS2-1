@@ -30,7 +30,7 @@ class Tag
 		$attributes = '';
 
 		foreach ($this->attributes as $attrName => $attrValue) {
-			$attributes .= $attrValue ? " {$attrName}=\"$attrValue\"" : (' ' . $attrName);
+			$attributes .= $attrValue ? sprintf(' %s="%s"', $attrName, $attrValue) : (' ' . $attrValue);
 		}
 
 		return $attributes;
@@ -56,10 +56,10 @@ class Tag
 
 		$attributes = $this->getAttrLine();
 
-		$result = "<{$this->name}{$attributes}>";
+		$result = sprintf('<%s%s>', $this->name, $attributes);
 
 		if (!in_array($this->name, self::SINGLE_TAGS)) {
-			$result .="{$text}</{$this->name}>";
+			$result .= sprintf('%s</%s>', $text, $this->name);
 		}
 
 		return $result;

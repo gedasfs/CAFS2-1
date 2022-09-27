@@ -12,10 +12,10 @@ function  getAnswer() {
 	
 	// answersValue = answersValue ? answersValue.value : null;
 
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
-	let answersValue = answersDiv.querySelector('[name="answer"]:checked')?.value;
+	// return answersValue;
 
-	return answersValue;
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+	return answersDiv.querySelector('[name="answer"]:checked')?.value;
 }
 
 function generateVariants(variants) {

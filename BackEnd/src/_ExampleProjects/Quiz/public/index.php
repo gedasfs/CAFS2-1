@@ -16,8 +16,6 @@ ob_start();
 require_once ROOT_PATH . '/vendor/autoload.php';
 
 try {
-	require_once ROOT_PATH . '/src/functions.php';
-
 	(Dotenv\Dotenv::createImmutable(ROOT_PATH))->load();
 
 	if (env('APP_DEBUG', FALSE)) {
@@ -36,23 +34,18 @@ try {
 	$code = $e->getCode();
 	$message = $e->getMessage();
 
-	$isXMLHttpRequest = $_SERVER['HTTP_X_REQUESTED_WITH'] ?? FALSE;
-	$isXMLHttpRequest = !empty($isXMLHttpRequest) && strtolower($isXMLHttpRequest) == 'xmlhttprequest';
+	$isXMLHttpRequest = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
 
-	if (!empty($requestedWith) && strtolower($requestedWith) == 'xmlhttprequest') {
-		ajaxResponse([], FALSE, $e->getMessage(), $e->getCode());
-	}
-
-	// ToDo: improve
 	if ($code == 404) {
 		if ($isXMLHttpRequest) {
 			ajaxResponse([], FALSE, $e->getMessage(), 404);
 		} else {
 			http_response_code(404);
+			echo 'page not found';
 		}
 	} else {
 		if ($isXMLHttpRequest) {
-			ajaxResponse([], FALSE, $e->getMessage(), 500);
+			ajaxResponse(status: FALSE, message: $e->getMessage(), httpResponseCode: 500);
 		} else {
 			http_response_code(500);
 			echo "Error: {$e->getMessage()}";

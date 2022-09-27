@@ -6,7 +6,11 @@ class Index {
 
 	public function perform()
 	{
-		return view('index');
+		$title = 'Quiz FooBar';
+
+		return view('index', [
+			'title' => 'Quiz'
+		]);
 	}
 }
 
