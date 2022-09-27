@@ -1,0 +1,30 @@
+[
+	{
+		"question": "What does PHP stand for?",
+		"variants": [
+			"Personal Hypertext Processor",
+			"PHP: Hypertext Preprocessor",
+			"Private Home Page"
+		],
+		"answer": 1
+	},
+	{
+		"question": "PHP server scripts are surrounded by delimiters, which?",
+		"variants": [
+			"<?php>...</?>",
+			"<&>...</&>",
+			"<script>...</script>"
+		],
+		"answer": 0
+	},
+	{
+		"question": "How do you write \"Hello World\" in PHP",
+		"variants": [
+			"Document.Write(\"Hello World\");",
+			" \"Hello World\";",
+			"echo \"Hello World\";"
+
+		],
+		"answer": 2
+	}
+]

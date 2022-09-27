@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="<?php echo asset('/css/app.css'); ?>">
+</head>
+<body>
+	<div class="container mt-5">
+		<?php foreach ($questions as $question):?>
+		<div class="card placeholder-glow">
+			<div class="card-body">
+				<h5 class="card-title">Quiz</h5>
+				<!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+				<?php // App\Classes\Tag::showQuestionPlaceholder(); ?>
+				<?php App\Classes\Tag::showQuestion($question['question']); ?>
+				<!-- <p class="card-text w-100 placeholder" id="question"></p> -->
+			</div>
+			<ul class="list-group list-group-flush" id="answers">
+				<?php // App\Classes\Tag::showAnswerPlaceholder(); ?>
+				<?php foreach ($question['variants'] as $key => $variant):?>
+				<?php  App\Classes\Tag::showAnswer($variant, $key); ?>
+				<?php endforeach;?>
+				<!-- <li class="list-group-item placeholder mb-1"></li> -->
+				<!-- <li class="list-group-item placeholder mb-1"></li> -->
+			</ul>
+			<!-- <div class="card-footer text-center">
+				<button class="btn btn-success">Next</button>
+			</div> -->
+		</div>
+		<?php endforeach; ?>
+	</div>
+	<script src="<?php echo asset('/js/app.js'); ?>"></script>
+</body>
+</html>

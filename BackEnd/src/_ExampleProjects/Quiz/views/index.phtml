@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz</title>
+	<link rel="stylesheet" href="<?php echo asset('/css/app.css'); ?>">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="card placeholder-glow">
+			<div class="card-body">
+				<h5 class="card-title">Quiz</h5>
+				<!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+				<?php App\Classes\Tag::showQuestionPlaceholder(); ?>
+			</div>
+			<ul class="list-group list-group-flush" id="answers">
+				<?php for ($i=0; $i < 4; $i++):?>
+				<?php  App\Classes\Tag::showAnswerPlaceholder(); ?>
+				<?php endfor;?>
+			</ul>
+			<div class="card-footer text-center">
+				<?php
+					// <button class="btn btn-success" id="next-question" disabled>Next</button>
+					(new App\Classes\Tag('button'))
+						->setText('Next')
+						->setAttr('class', 'btn btn-success')
+						->setAttr('id', 'next-question')
+						->setAttr('disabled')
+						->show();
+				?>
+
+				<?php
+					// <button class="btn btn-success" id="next-question" disabled>Next</button>
+					App\Classes\Tag::name('a')
+						->setText('Reset')
+						->setAttr('class', 'btn btn-danger')
+						->setAttr('type', 'button')
+						->setAttr('href', '/?module=reset')
+						->setAttr('id', 'reset-quiz')
+						->show();
+				?>
+			</div>
+		</div>
+	</div>
+	<script src="<?php echo asset('/js/app.js'); ?>"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "name": "codeacademy/quiz",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": ["src/functions.php"]
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "symfony/var-dumper": "^5.4"
+    }
+}

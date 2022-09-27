@@ -1,0 +1,14 @@
+node_modules
+vendor
+
+/public/hot
+/public/storage
+/public/js
+/public/css
+/public/fonts
+/public/plugins
+
+/public/mix-manifest.json
+/public/mix.js.map
+
+.env
